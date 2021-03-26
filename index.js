@@ -20,9 +20,11 @@ const createTopHeadlinesList = ( articles ) => {
       <a href=${item.url} target=_blank class="articleLink">
         <div class="imageContainer"
         style="background: url(${item.urlToImage})"></div>
-        <p class="date"> ${item.publishedAt} </p>
-        <p class="title"> ${item.title} </p>
-        <p class="excerpt">${item.description}</p>
+        <div class="content">
+          <p class="date"> ${item.publishedAt} </p>
+          <p class="title"> ${item.title} </p>
+          <p class="excerpt">${item.description}</p>
+        </div>
       </a>
   `
   }).join('')}
